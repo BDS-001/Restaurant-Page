@@ -1,4 +1,4 @@
-import restaurantHomepage from "./webpage-elements"
+import restaurantHomepage from "./homepage"
 import header from "./header"
 
 export default function initialLoad() {

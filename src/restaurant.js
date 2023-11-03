@@ -1,0 +1,1 @@
+export const restaurant = document.querySelector('#content')
