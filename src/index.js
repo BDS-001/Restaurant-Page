@@ -2,3 +2,5 @@ console.log('Inside of src/index.js write a simple console.log or alert statemen
 
 import initialLoad from "./load-page"
 import restaurantElements from "./webpage-elements"
+
+initialLoad()
