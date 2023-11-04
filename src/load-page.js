@@ -1,7 +1,7 @@
-import restaurantHomepage from "./homepage"
+import { homepage } from "./homepage"
 import { header } from "./header"
 
 export default function initialLoad() {
     header.renderHeader()
-    restaurantHomepage()
+    homepage.renderHomepage()
 }

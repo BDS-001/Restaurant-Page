@@ -1,11 +1,14 @@
 import initialLoad from "./load-page"
 import { header } from "./header";
+import { menu } from "./menu";
+import { about } from "./about";
+import { homepage } from "./homepage";
 
 
 const restaurantWebPage = (function() {
     initialLoad()
-    console.log(header.homepage)
-    console.log(about)
-    console.log(menu)
 
+    header.menu.addEventListener('click', menu.renderMenu)
+    header.about.addEventListener('click', about.renderAbout)
+    header.homepage.addEventListener('click', homepage.renderHomepage)
 })();
