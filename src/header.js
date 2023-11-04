@@ -1,4 +1,4 @@
-export default function header() {
+export const header = (function() {
     const body = document.querySelector('body')
     const headerBar = document.createElement('div')
     headerBar.className = 'header'
@@ -17,5 +17,10 @@ export default function header() {
     headerBar.append(menu)
     headerBar.append(about)
 
-    body.prepend(headerBar)
-}
+    const renderHeader = function() {
+        const body = document.querySelector('body')
+        body.prepend(headerBar)
+    }
+
+    return {headerBar, homepage, menu, about, renderHeader}
+})();
