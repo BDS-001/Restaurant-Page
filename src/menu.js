@@ -1,4 +1,4 @@
-import { restaurant } from "./restaurant"
+import { restaurant } from "./globals"
 
 export default function restaurantMenu() {
     return
