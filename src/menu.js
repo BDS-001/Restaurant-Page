@@ -8,7 +8,7 @@ export const menu = (function() {
         item.className = 'dish-container'
     
         const title = document.createElement('h3')
-        title.innerHTML = `${itemName} (${price})`
+        title.innerHTML = `${itemName} ($${price})`
         item.append(title)
     
         const itemImgContainer = document.createElement('div')
@@ -43,8 +43,8 @@ export const menu = (function() {
 
     //list of meu items
     const menuList = [
-        addMenuItem('test', 4, '.././src/assets/images/res_pic.jpg', 'testing desc'),
-        addMenuItem('another test', 5, '.././src/assets/images/res_pic.jpg', 'anopther test for this')
+        addMenuItem('test', 4.99, '.././src/assets/images/res_pic.jpg', 'testing desc'),
+        addMenuItem('another test', 5.45, '.././src/assets/images/res_pic.jpg', 'anopther test for this')
 ]
 
     return {renderMenu}
