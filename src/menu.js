@@ -14,3 +14,8 @@ export const menu = (function() {
 
     return {renderMenu}
 })();
+
+const menuItem = function(itemName, image) {
+    const item = document.createElement('div')
+    item.className = 'dish-container'
+}
