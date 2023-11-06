@@ -1,0 +1,14 @@
+:root {
+    --item-img-size: 200px;
+}
+
+.item-img-container {
+    width: var(--item-img-size);
+    height: var(--item-img-size);
+    overflow: hidden;
+}
+
+.item-img {
+    height: var(--item-img-size);
+    width: auto;
+}

@@ -3,18 +3,24 @@ import { restaurant } from "./globals"
 export const menu = (function() {
 
     //menu item factory
-    const addMenuItem = function(itemName, imagePath, description) {
+    const addMenuItem = function(itemName, price, imagePath, description) {
         const item = document.createElement('div')
         item.className = 'dish-container'
     
-        const name = document.createElement('h3')
-        name.innerHTML = itemName
-        item.append(name)
+        const title = document.createElement('h3')
+        title.innerHTML = `${itemName} (${price})`
+        item.append(title)
     
+        const itemImgContainer = document.createElement('div')
+        itemImgContainer.className = 'item-img-container'
+
+
         const img = document.createElement('img')
         img.setAttribute('src', imagePath)
         img.setAttribute('alt', itemName)
-        item.append(img)
+        img.className = 'item-img'
+        itemImgContainer.append(img)
+        item.append(itemImgContainer)
 
         const desc = document.createElement('p')
         desc.innerHTML = description
@@ -37,8 +43,8 @@ export const menu = (function() {
 
     //list of meu items
     const menuList = [
-        addMenuItem('test', '.././src/assets/images/res_pic.jpg', 'testing desc'),
-        addMenuItem('another test', '.././src/assets/images/res_pic.jpg', 'anopther test for this')
+        addMenuItem('test', 4, '.././src/assets/images/res_pic.jpg', 'testing desc'),
+        addMenuItem('another test', 5, '.././src/assets/images/res_pic.jpg', 'anopther test for this')
 ]
 
     return {renderMenu}
