@@ -5,7 +5,7 @@ export const menu = (function() {
     //menu item factory
     const addMenuItem = function(itemName, price, imagePath, description) {
         const item = document.createElement('div')
-        item.className = 'dish-container'
+        item.className = 'item-container'
     
         const title = document.createElement('h3')
         title.innerHTML = `${itemName} ($${price})`
@@ -33,7 +33,12 @@ export const menu = (function() {
     const renderMenu = function() {
         restaurant.innerHTML = ''
         const menuContainer = document.createElement('div')
-    
+        menuContainer.className = 'menu-container'
+
+        const title = document.createElement('h1')
+        title.innerHTML = 'MENU'
+        menuContainer.append(title)
+        
         for (let index = 0; index < menuList.length; index++) {
             menuContainer.append(menuList[index])
         }
