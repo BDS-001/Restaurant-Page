@@ -4,6 +4,7 @@ export const homepage = (function() {
     const renderHomepage = function() {
         restaurant.innerHTML = ''
         const homepage = document.createElement('div')
+        homepage.className = 'homepage'
 
         const header = document.createElement('h1')
         header.innerHTML = 'The Code & Byte Bistro Grand Opening!'

@@ -2,6 +2,12 @@
     --item-img-size: 200px;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
 .item-img-container {
     width: var(--item-img-size);
     height: var(--item-img-size);
@@ -11,4 +17,18 @@
 .item-img {
     height: var(--item-img-size);
     width: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.homepage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
