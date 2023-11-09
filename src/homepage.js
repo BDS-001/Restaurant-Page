@@ -7,7 +7,7 @@ export const homepage = (function() {
         homepage.className = 'homepage'
 
         const header = document.createElement('h1')
-        header.innerHTML = 'The Code & Byte Bistro Grand Opening!'
+        header.innerHTML = 'The Bit & Byte Bistro Grand Opening!'
         homepage.append(header)
     
         const image = document.createElement('img')
