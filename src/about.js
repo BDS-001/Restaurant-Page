@@ -9,6 +9,7 @@ export const about = (function() {
         const tmp = document.createElement('p')
         tmp.innerHTML = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, expedita quisquam minus iusto quo at, suscipit ea, odit amet quia rem est ut hic consequuntur error. Molestiae quasi id maxime.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, expedita quisquam minus iusto quo at, suscipit ea, odit amet quia rem est ut hic consequuntur error. Molestiae quasi id maxime.'
         aboutContainer.append(tmp)
+        aboutContainer.append(_contact())
         restaurant.append(aboutContainer)
     }
 
@@ -21,7 +22,13 @@ export const about = (function() {
 
         const email = document.createElement('h3')
         email.innerHTML = 'contact@bitandbytebistro.com'
-        contact.append(phone)
+        contact.append(email)
+
+        const address = document.createElement('h3')
+        address.innerHTML = '123 realstreet rd'
+        contact.append(address)
+
+        return contact
     }
 
     return {renderAbout}
