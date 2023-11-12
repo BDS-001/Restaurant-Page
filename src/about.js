@@ -16,6 +16,7 @@ export const about = (function() {
 
     const _contact = function() {
         const contact = document.createElement('div')
+        contact.className = 'contact-container'
 
         const title = document.createElement('h1')
         title.innerHTML = 'Contact Information'
